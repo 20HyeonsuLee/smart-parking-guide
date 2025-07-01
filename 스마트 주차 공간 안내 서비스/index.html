@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스마트 주차 공간 안내 서비스</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=618a52688e690e70e7e1bedfcf1f36b3"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>스마트 주차 공간 안내 서비스</h1>
+      <form id="searchForm">
+        <label for="start">출발지</label>
+        <input type="text" id="start" name="start" required />
+        <label for="end">목적지</label>
+        <input type="text" id="end" name="end" required />
+        <button type="submit">검색</button>
+      </form>
+      <div id="results" class="hidden">
+        <h2>검색 결과</h2>
+        <div
+          id="map"
+          style="width: 100%; height: 300px; margin-bottom: 20px; display: none"
+        ></div>
+        <div id="vehiclesSection">
+          <h3>출발지 주변 킥보드/자전거</h3>
+          <ul id="vehiclesList"></ul>
+        </div>
+        <div id="parkingSection">
+          <h3>목적지 주변 주차 공간</h3>
+          <ul id="parkingList"></ul>
+        </div>
+      </div>
+      <div id="photoSection">
+        <h2>주차 가능 여부 확인</h2>
+        <form id="photoForm">
+          <input type="file" id="photoInput" accept="image/*" />
+          <button type="submit">확인</button>
+        </form>
+        <div id="photoResult"></div>
+      </div>
+    </div>
+    <script src="main.js" defer></script>
+  </body>
+</html>

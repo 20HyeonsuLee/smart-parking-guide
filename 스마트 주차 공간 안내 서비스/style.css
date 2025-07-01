@@ -1,0 +1,76 @@
+body {
+    font-family: 'Noto Sans KR', Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 32px 24px 24px 24px;
+}
+h1 {
+    text-align: center;
+    color: #2d3a4b;
+    margin-bottom: 32px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+label {
+    font-weight: 500;
+    color: #2d3a4b;
+}
+input[type="text"], input[type="file"] {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #2563eb;
+}
+#results {
+    margin-bottom: 32px;
+}
+#results.hidden {
+    display: none;
+}
+#vehiclesSection, #parkingSection, #photoSection {
+    margin-bottom: 24px;
+}
+#vehiclesList, #parkingList {
+    list-style: none;
+    padding: 0;
+}
+#vehiclesList li, #parkingList li {
+    background: #f0f4fa;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #2d3a4b;
+    font-size: 15px;
+}
+#photoResult {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2563eb;
+}
