@@ -1,3 +1,5 @@
+url: url: https://20hyeonsulee.github.io/smart-parking-guide/
+
 # **📌 스마트 주차 경로 안내 서비스 (Mock 기반 프로토타입)**
 
 ---
